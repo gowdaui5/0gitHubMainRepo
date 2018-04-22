@@ -9,8 +9,10 @@ sap.ui.define([
 	"sap/ui/Device",
 	"full/stack/model/formatter",
 	"full/stack/model/grouper",
-	"full/stack/model/GroupSortState"
-], function(BaseController, JSONModel, History, Filter, FilterOperator, GroupHeaderListItem, Device, formatter, grouper, GroupSortState) {
+	"full/stack/model/GroupSortState",
+	"sap/m/MessageBox"
+], function(BaseController, JSONModel, History, Filter, FilterOperator, GroupHeaderListItem, Device, formatter, grouper, GroupSortState,
+	MessageBox) {
 	"use strict";
 
 	return BaseController.extend("full.stack.controller.Master", {
@@ -80,7 +82,7 @@ sap.ui.define([
 			this.byId("pullToRefresh").hide();
 		},
 		onSemPress: function() {
-			window.alert("msg");
+			MessageBox.show("i am a text message");
 		},
 
 		/**
