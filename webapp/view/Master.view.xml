@@ -43,5 +43,8 @@
 				<core:Item id="masterGroup1" key="NetAmount" text="{i18n>masterGroup1}"/>
 			</semantic:GroupSelect>
 		</semantic:group>
+		<semantic:addAction>
+			<semantic:AddAction press="onSemPress"/>
+		</semantic:addAction>
 	</semantic:MasterPage>
 </mvc:View>
